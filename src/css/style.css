@@ -1,0 +1,118 @@
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  /* font-size: 100%; */
+  font: inherit;
+  vertical-align: baseline;
+  background-color: #27283A;
+}
+
+.headerComponent{
+ 
+  display: flex;
+  
+  
+}
+header .headerButton{
+  
+
+  width: 100px;
+  height: 20px;
+
+ font-family: 'Sora';
+font-style: normal;
+font-weight: 600;
+font-size: 16px;
+line-height: 20px;
+display: flex;
+align-items: center;
+text-align: center;
+letter-spacing: 0.2px; 
+
+
+}
+
+.mainDiv{
+  
+}
+
+.cardsSection{
+
+ 
+ /*  list-style: none;
+  display: flex;
+  justify-content: space-around; */
+ 
+/*   border: 1px solid black;
+  display: flex;
+  
+  align-items: flex-start;
+  padding-left: 0%;
+  width: 100%;
+  height: 100%; */
+
+     
+}
+.cardDiv{
+/*    display: block;
+  flex-wrap: wrap; 
+ 
+  border: 1px solid red;
+  width: 5%;
+  height: 50%; */
+
+}
+
+.cardImage {
+/*   border-radius: 10px;
+  width: 100%;
+  height: 150px;  */
+ 
+}
+
+.cardText{
+/*   border: 1px solid yellow;
+  width: 40%;
+  font-family: 'Sora';
+  font-size: 10px;
+  color: white; */
+  
+}
+.cardEth{
+/*   margin-left: 30%;
+  width: 25%;
+  background-color: transparent;
+  color: #514CFF;
+  justify-content: center;
+  margin-left: 60%;
+  margin-top:-10%; */
+}
+.cardClock{
+/*   margin-bottom: -20%;
+  margin-left: 100%;
+  width: 10%; */
+
+}
+.timer{
+/*   margin-left: 20%;
+  font-size: 50%; */
+}
+
+.cardFooter{
+/*   border: 1px solid gray;
+  height: 50; */
+  
+}
+
+.person{
+  /* width: 10%; */
+}
+
+.peopleText{
+  /* font-size: 10%; */
+}
+
+.cardHearth{
+  /* width: 20px; */
+}
