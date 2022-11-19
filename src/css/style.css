@@ -11,59 +11,238 @@
 .headerComponent{
  
   display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  
+  margin: auto;
+  
+}
+.buttonContact{
+  
+  padding-left: 250px;
+  font-size: 20px;
+  padding-right: 10px;
+
   
   
 }
-header .headerButton{
+.buttonMyAccount{
+
+  padding-left: 5px;
+  font-size: 20px;
+
+ 
+  display: flex;
+  align-self: center;
+  align-content: center;
+  background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
   
+}
+header .headerButton{
 
-  width: 100px;
-  height: 20px;
+width: 81px;
+height: 20px;
 
- font-family: 'Sora';
+font-family: 'Sora';
 font-style: normal;
 font-weight: 600;
 font-size: 16px;
 line-height: 20px;
-display: flex;
+
 align-items: center;
 text-align: center;
-letter-spacing: 0.2px; 
-
+letter-spacing: 0.2px;
 
 }
 
-.mainDiv{
+.TOKEN{
+  display: flex;
+  justify-content: center;
+
+  
+
+}
+
+.nftTItle{
+  color: antiquewhite;
+  background: transparent;
+  font-family: 'Sora';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100px;
+  margin-top: -70%;
+  margin-left: -25%;
   
 }
 
+.Pcirculo{
+  height: 350px;
+  width: 350px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 30%;
+  margin-top: 25%;
+  opacity: 0.5;
+  align-items: center;
+
+}
+
+.Scirculo{
+  height: 550px;
+  width: 550px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 22%;
+  
+  margin-top: -40%;
+  align-items: center;
+ 
+}
+
+.Tcirculo{
+  height: 700px;
+  width: 700px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 16%;
+  
+  opacity: 0.5;
+  margin-top: -55%;
+  align-items: center;
+}
+
+.Qcirculo{
+  height: 900px;
+  width: 900px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-left: 7%;
+  
+  opacity: 0.5;
+  margin-top: -72%;
+  align-items: center;
+
+}
+.sapo{
+  margin-top: -40%;
+  margin-left: 60%;
+
+}
+.papagaio{
+  margin-top: -90%;
+  margin-left: 85%;
+}
+.lobo{
+  margin-top: -164%;
+  margin-left: 85%;
+
+}
+.cobra{
+  margin-top: -90%;
+  margin-left: 25%;
+}
+
+.tigre{
+  margin-top: -130%;
+  margin-right: 60%;
+
+}
+
+.circleBottom{
+  display: flex;
+  justify-content: space-around;
+  
+  align-items: center;
+  margin-top: -15%;
+}
+.titleApp{
+  color: aliceblue;
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}
 .cardsSection{
 
- 
- /*  list-style: none;
+ list-style: none;
   display: flex;
-  justify-content: space-around; */
+  justify-content: space-around; 
  
-/*   border: 1px solid black;
+   border: 1px solid black;
   display: flex;
   
   align-items: flex-start;
   padding-left: 0%;
   width: 100%;
-  height: 100%; */
+  height: 100%; 
 
      
 }
 .cardDiv{
-/*    display: block;
+   display: block;
   flex-wrap: wrap; 
- 
-  border: 1px solid red;
-  width: 5%;
-  height: 50%; */
+
+  width: 30%;
+  height: 50%; 
 
 }
 
+.contentSection{
+  color: white;
+  padding-top: 10%;
+  width: 40%;
+  font-size: 300%;
+}
+.contentText{
+  color: #7780A1;
+  width: 50%;
+}
+
+.buttonGetStartedContent{
+  color: #FFFFFF;
+  background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.buttonLearnMore{
+  margin-left: 2%;
+  border: 1px white ridge;
+  border-radius: 20px;
+  color: #7780A1;
+}
+
+.tresCores{
+  width: 30%;
+  margin-bottom: 10%;
+
+} 
+
+.balde{
+  margin-left: 30%;
+  margin-bottom: 10%;
+  width: 20%;
+}
+
+.ourNumbers{
+  display: flex;
+
+  justify-content: space-around;
+
+ 
+}
+
+.numbers{
+  color: white;
+  display: flex;
+  font-size: 300%;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.info{
+  color: white;
+}
 .cardImage {
 /*   border-radius: 10px;
   width: 100%;
@@ -72,31 +251,20 @@ letter-spacing: 0.2px;
 }
 
 .cardText{
-/*   border: 1px solid yellow;
-  width: 40%;
-  font-family: 'Sora';
-  font-size: 10px;
-  color: white; */
+  
+  color: white; 
   
 }
 .cardEth{
-/*   margin-left: 30%;
-  width: 25%;
-  background-color: transparent;
+
   color: #514CFF;
-  justify-content: center;
-  margin-left: 60%;
-  margin-top:-10%; */
-}
-.cardClock{
-/*   margin-bottom: -20%;
-  margin-left: 100%;
-  width: 10%; */
 
 }
+/* .cardClock{
+
+} */
 .timer{
-/*   margin-left: 20%;
-  font-size: 50%; */
+color: white;
 }
 
 .cardFooter{
@@ -105,10 +273,70 @@ letter-spacing: 0.2px;
   
 }
 
-.person{
-  /* width: 10%; */
+.peopleText{
+  color: #7780A1;
 }
 
+.footerDiv{
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid white;
+  
+}
+
+.market{
+  color: white;
+}
+
+.footerButton{
+  color: white;
+}
+
+.nftDiv{
+  
+  width: 30%;
+  border: 1px solid white;
+}
+
+.buttonsDIv{
+  margin-left: 30%;
+  border: 1px solid white;
+  height: 200%;
+  width:30% ;
+
+  
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.MyAccount{
+  color: white;
+  
+  background: linear-gradient(104.42deg, #4745D0 0%, #2A27C9 60.23%);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+.footerLastSection{
+  border: 1px solid white;
+  width: 30%;
+  margin-top: -15%;
+  margin-left: 60%;
+  color: white;
+}
+
+.inputField{
+  border-radius: 10px;
+  background-color: white;
+}
+
+.inputButton{
+  padding-left: 10%;
+
+}
 .peopleText{
   /* font-size: 10%; */
 }

@@ -12,8 +12,10 @@ import { Vector2Image,Vector3Image,cardimage5Image,cardimage4Image,
   cardperson2Image,cardperson3Image,orbitaimage1Image,orbitaimage2Image,orbitaimage3Image,
   orbitaimage4Image,orbitaimage5Image,orbitaimage6Image } from './utils/constImages';
   import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { infoMock } from './utils/InfoMock';
 function App() {
+  
+  console.log(infoMock[0].logo)
   const imagesCards = [cardimage1Image,cardimage5Image,cardimage2Image,cardimage4Image,cardimage3Image]
   const personCards = [cardperson1Image,cardperson2Image,cardperson3Image]
   return (
@@ -21,69 +23,25 @@ function App() {
       <div className='mainDiv'>
       <HeaderPage/>
       <div> 
+      {/* <h4 className="TOKEN">NON FUNGIBLE TOKENS</h4> */}
         <Orbit></Orbit>
         
       </div>
       <body>
-        <h2> Latest live auctions</h2>
+        <h2 className='titleApp'> Latest live auctions</h2>
       <ul className='cardsSection'>
-      <Card  value="enim, a etiam"
-        logo={cardimage5Image}
-        buttonText="2.55 ETH"
-        timeStamp="12:15 min left"
-        personIcon={cardperson1Image}
-        personIcon1={cardperson2Image}
-        personIcon2={cardperson3Image}
-        customText="19 are people binding"
-        />
-        <Card value="Vulputate felis purus viverra morbi facilisi eget"
-        logo={cardimage1Image}
-        buttonText="3.19 ETH"
-        timeStamp="2:41 min left"
-        personIcon={cardperson1Image}
-        personIcon1={cardperson2Image}
-        personIcon2={cardperson3Image}
-        customText="35 people are binding"
-        />
-                <Card value="Dui accumsan leo vestibulum ornare eu"
-        logo={cardimage2Image}
-        buttonText="1.11 ETH"
-        timeStamp="22:59 min left"
-        personIcon={cardperson1Image}
-        personIcon1={cardperson2Image}
-        personIcon2={cardperson3Image}
-        customText="101 are people binding"
-        />
-        <Card value="Senectus adipiscing nascetur accumsan etiam"
-        logo={cardimage4Image}
-        buttonText="1.63 ETH"
-        timeStamp="37:01 min left"
-        personIcon={cardperson1Image}
-        personIcon1={cardperson2Image}
-        personIcon2={cardperson3Image}
-        customText="12 are people binding"
-        />
-         <Card value="Mattis at diam lorem nisl nam sed sociis"
-        logo={cardimage3Image}
-        buttonText="1.63 ETH"
-        timeStamp="12:15 min left"
-        personIcon={cardperson1Image}
-        personIcon1={cardperson2Image}
-        personIcon2={cardperson3Image}
-        customText="19 are people binding"
-        />
-  
+        {infoMock.map((item) => 
+        <Card value={item.value}
+         logo={item.logo}
+        buttonText={item.buttonText}
+        timeStamp={item.timeStamp}
+        personIcon={item.personIcon}
+        personIcon1={item.personIcon1}
+        personIcon2={item.personIcon2}
+        customText={item.customText}
+
+        />)}
       
-        
-{/*         {imagesCards.map((item) => <Card logo={item} value="1randomText"
-        buttonText="1.11ETH"
-        timeSamp="2:41 min"
-        personIcon={cardperson1Image}
-        personIcon1={cardperson3Image}
-        personIcon2={cardperson2Image}
-        HearthImage={HearthImage}
-        
-        />)}  */}
       </ul>
       <Content/>
       <OurNumbers/>

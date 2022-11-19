@@ -6,20 +6,33 @@ Vector2Image,Vector3Image, Vector4Image} from '../utils/constImages'
 export default function Orbit(){
   return (
     <div>
-      <img src={orbitaimage1Image}/>
-      <img src={orbitaimage2Image}/>
-      <img src={orbitaimage3Image}/>
-      <img src={orbitaimage4Image}/>
-      <img src={orbitaimage5Image}/>
-      <img src={orbitaimage6Image}/>
+      <div className="Pcirculo"> 
+      
+      <h1 className="nftTItle">A new NFT EXperience</h1></div>
+      
+      <div className="Scirculo"/>
+      <div className="Tcirculo"/>
+      <div className="Qcirculo"/>
 
-
-      <h1>A new NFT EXperience</h1>
-
-      <img src={VectorImage}/>
+      <img  className="papagaio" src={orbitaimage6Image}/>
+      <img className="sapo" src={orbitaimage1Image}/>
+      {/* <img src={orbitaimage2Image}/> */}
+      <img className="tigre" src={orbitaimage3Image}/>
+      <img className="cobra"src={orbitaimage4Image}/>
+      <img className="lobo" src={orbitaimage5Image}/>
+     
+     <div className="circleBottom">
+     <img  src={VectorImage}/>
       <img src={Vector2Image}/>
       <img src={Vector3Image}/>
       <img src={Vector4Image}/>
+     </div>
+   
+
+      
+      
+      
+      
     </div>
   )
 }

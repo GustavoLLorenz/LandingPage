@@ -1,6 +1,6 @@
  const OurNumbers = ({value}) =>{
   return (
-    <h2> {value} </h2>
+    <h2 className="numbers"> {value} </h2>
   )
 
 

@@ -3,22 +3,24 @@ import NumbersComponent from "./NumbersComponent"
 
 export default function OurNumbers() {
   return (
-    <section>
+    <section className="ourNumbers">
       <div>
-        <NumbersComponent value="300k"/>
-        <p>Users active</p>
+        <NumbersComponent className="numbers" value="300k"/>
+        <p className="info">Users active</p>
       </div>
       <div>
-        <NumbersComponent value="52,5k"/>
-        <p>Artworks</p>
+        <NumbersComponent className="numbers"  value="52,5k"/>
+        <p className="info" >Artworks</p>
       </div>
       <div>
-        <NumbersComponent value="17,5k"/>
-        <p>Artists</p>
+        <NumbersComponent className="numbers"  value="17,5k"/>
+        <p className="info">Artists</p>
       </div>
-      <NumbersComponent value="35.58"/>
-
-      <p>ETH spent</p>
+      <div>
+      <NumbersComponent className="numbers"  value="35.58"/>
+      <p className="info">ETH spent</p>
+      </div>
+   
     </section>
   )
 }
