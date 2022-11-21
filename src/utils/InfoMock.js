@@ -1,4 +1,58 @@
-import {cardimage3Image, cardimage4Image, cardimage1Image,cardimage2Image, cardimage5Image,cardperson1Image,cardperson2Image ,cardperson3Image} from "./constImages"
+import {cardimage3Image,
+   cardimage4Image, cardimage1Image,
+   cardimage2Image, cardimage5Image,
+   cardperson1Image,cardperson2Image ,
+   cardperson3Image,
+   orbitaimage1Image, orbitaimage2Image, orbitaimage3Image,
+   orbitaimage4Image,orbitaimage5Image,orbitaimage6Image,VectorImage,
+   Vector2Image,Vector3Image, Vector4Image} from "./constImages"
+ 
+
+export const bestNfts = [
+  {
+    className: 'papagaio',
+    src:orbitaimage6Image
+  },
+  {
+    className: 'sapo',
+    src:orbitaimage1Image
+  },
+  {
+    className: 'tigre',
+    src:orbitaimage3Image
+  },
+  {
+    className: 'cobra',
+    src:orbitaimage4Image
+  },
+  {
+    className: 'lobo',
+    src:orbitaimage5Image
+  },
+  {
+    className: 'reptil',
+    src:orbitaimage2Image
+  }
+]
+
+export const ourPartners = [
+  {
+    className: 'circleLogo',
+    src:VectorImage
+  },
+  {
+    className: 'circleLogo',
+    src:Vector2Image
+  },
+  {
+    className: 'circleLogo',
+    src:Vector3Image
+  },
+  {
+    className: 'circleLogo',
+    src:Vector4Image
+  }
+]
 
 export  const infoMock = [
   {
@@ -52,4 +106,23 @@ export  const infoMock = [
     customText:"19 are people binding"
   }
 
+]
+
+export const numbersData = [
+  {
+    value: '300k',
+    info: 'Users active'
+  },
+  {
+    value: '52,5k',
+    info: 'Artworks'
+  },
+  {
+    value: '17,5k',
+    info: 'Artists'
+  },
+  {
+    value: '35.58',
+    info: 'ETH spent'
+  }
 ]

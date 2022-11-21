@@ -1,6 +1,11 @@
- const OurNumbers = ({value}) =>{
+ const OurNumbers = ({value, info}) =>{
   return (
-    <h2 className="numbers"> {value} </h2>
+    <div className="ourNumbersRemastered">
+      <h2 className="numbers"> {value} </h2>
+      <p className="info">{info}</p>
+    </div>
+    
+    
   )
 
 

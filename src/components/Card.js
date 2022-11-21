@@ -7,7 +7,8 @@ import { clockImage } from "../utils/constImages";
 function Card({customText,value,buttonText,timeStamp,logo,personIcon,personIcon1,personIcon2}) {
 return (
   <li className="cardDiv">
-  <img className='cardImage' src={logo} alt="teste"/>
+    <div className="divisionCard">
+    <img className='cardImage' src={logo} alt="teste"/>
    
    <p className="cardText">{value}</p>
   <button className="cardEth">{buttonText}</button>
@@ -20,6 +21,9 @@ return (
     <p className="peopleText">{customText}</p>
     <img classname="cardHearth" src={HearthImage} alt="HearImage"/>
   </footer>
+      
+    </div>
+ 
  </li>
 )
 }

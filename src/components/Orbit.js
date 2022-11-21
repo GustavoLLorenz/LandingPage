@@ -1,38 +1,30 @@
 import React from "react";
-import {orbitaimage1Image, orbitaimage2Image, orbitaimage3Image,
-orbitaimage4Image,orbitaimage5Image,orbitaimage6Image,VectorImage,
-Vector2Image,Vector3Image, Vector4Image} from '../utils/constImages'
+import {CircleLogo} from "./CircleLogo";
+import { bestNfts, ourPartners } from "../utils/InfoMock";
 
 export default function Orbit(){
   return (
     <div>
-      <div className="Pcirculo"> 
-      
-      <h1 className="nftTItle">A new NFT EXperience</h1></div>
-      
-      <div className="Scirculo"/>
-      <div className="Tcirculo"/>
-      <div className="Qcirculo"/>
-
-      <img  className="papagaio" src={orbitaimage6Image}/>
-      <img className="sapo" src={orbitaimage1Image}/>
-      {/* <img src={orbitaimage2Image}/> */}
-      <img className="tigre" src={orbitaimage3Image}/>
-      <img className="cobra"src={orbitaimage4Image}/>
-      <img className="lobo" src={orbitaimage5Image}/>
+       <div className='firstOrbit testorbit'/>
+      <div className='secondOrbit testorbit'/>
+      <div className='thirdOrbit testorbit' />
+      <div className='fourthOrbit testorbit'/>
+      <div className='fifthOrbit testorbit'/>
+      <div className='sixthOrbit testorbit' />
+      <div className='seventhOrbit testorbit'/>
+      <div className='eighthOrbit testorbit' />
+      <div className='ninethOrbit testorbit' />
      
-     <div className="circleBottom">
-     <img  src={VectorImage}/>
-      <img src={Vector2Image}/>
-      <img src={Vector3Image}/>
-      <img src={Vector4Image}/>
-     </div>
-   
+       <h4 className="TOKEN">NON FUNGIBLE TOKENS</h4> 
+      <h1 className="nftTItle">A new NFT EXperience</h1>
+      <p className="discover">Discover, collect and sell</p>
+      {bestNfts.map((item) => <CircleLogo nftName={item.className} imgSrc={item.src}/>)}
+  
+      <div className="orbitFooter">
+        {ourPartners.map((item) => <CircleLogo nftName={item.className} imgSrc={item.src}/>)}
+      </div>
+  
 
-      
-      
-      
-      
     </div>
   )
 }
